@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>elomda cool - Privacy Policy & Terms</title>
+  <style>
+    body {font-family: Arial, sans-serif;background-color: #f8f9fa;color: #333;margin: 0;padding: 0;}
+    header {background-color: #007bff;color: white;padding: 20px;text-align: center;font-size: 24px;font-weight: bold;}
+    nav {display: flex;justify-content: center;gap: 15px;background-color: #e9ecef;padding: 10px;}
+    nav a {text-decoration: none;color: #007bff;font-weight: bold;cursor: pointer;}
+    section {max-width: 800px;margin: 20px auto;background: white;padding: 20px;border-radius: 12px;box-shadow: 0 0 10px rgba(0,0,0,0.1);}
+    h2 {color: #007bff;}
+  </style>
+  <script>
+    function showSection(id) {
+      document.getElementById('privacy').style.display = 'none';
+      document.getElementById('terms').style.display = 'none';
+      document.getElementById(id).style.display = 'block';
+    }
+    window.onload = () => showSection('privacy');
+  </script>
+</head>
+<body>
+  <header>elomda cool</header>
+  <nav>
+    <a onclick="showSection('privacy')">Privacy Policy</a>
+    <a onclick="showSection('terms')">Terms of Service</a>
+  </nav>
+
+  <section id="privacy">
+    <h2>🛡️ Privacy Policy</h2>
+    <p><strong>elomda cool</strong> respects your privacy and collects minimal data to ensure the proper functionality of the app:</p>
+    <ul>
+      <li>Email address (when registering).</li>
+      <li>Call data (date/duration only) for service improvement.</li>
+      <li>Push notifications when enabled.</li>
+    </ul>
+    <p>We do not share your data with third parties except when legally required or to improve the service (e.g., Firebase servers).</p>
+    <p>You can request data deletion by contacting us: <a href="mailto:support@elomda.cool">support@elomda.cool</a></p>
+  </section>
+
+  <section id="terms" style="display:none">
+    <h2>📜 Terms of Service</h2>
+    <p>By using <strong>elomda cool</strong>, you agree to the following:</p>
+    <ol>
+      <li>Use the app only for lawful purposes and do not misuse it.</li>
+      <li>Do not record or share calls without the other party's consent according to local laws.</li>
+      <li>We are not responsible for any content shared by users.</li>
+      <li>We may update the app or these terms at any time with notice to users.</li>
+      <li>Continued use of the app means you agree to the updated terms.</li>
+    </ol>
+  </section>
+</body>
+</html>
